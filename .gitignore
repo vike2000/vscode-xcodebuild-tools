@@ -5,3 +5,7 @@ py/build
 py/dist
 py/*.egg-info
 
+test/*.js
+test/*.js.map
+
+*.vsix
