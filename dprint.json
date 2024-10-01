@@ -1,0 +1,28 @@
+{
+  "excludes": [
+    "**/node_modules",
+    "**/*-lock.json"
+  ],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.93.0.wasm"
+  ],
+  "typescript": {
+    "indentWidth": 4,
+    "newLineKind": "auto",
+    "useBraces": "maintain",
+    "bracePosition": "sameLine",
+    "singleBodyPosition": "maintain",
+    "nextControlFlowPosition": "sameLine",
+    "preferSingleLine": true,
+    "jsx.bracketPosition": "sameLine",
+    "spaceSurroundingProperties": false,
+    "commentLine.forceSpaceAfterSlashes": false,
+    "exportDeclaration.spaceSurroundingNamedExports": false,
+    "importDeclaration.spaceSurroundingNamedImports": false,
+    "jsxSelfClosingElement.spaceBeforeSlash": false,
+    "module.sortImportDeclarations": "maintain",
+    "module.sortExportDeclarations": "maintain",
+    "exportDeclaration.sortNamedExports": "maintain",
+    "importDeclaration.sortNamedImports": "maintain"
+  }
+}
