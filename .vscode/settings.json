@@ -8,6 +8,8 @@
     },
     "typescript.format.semicolons": "insert",
     "cSpell.words": [
-        "dprint"
+        "dprint",
+        "ENONENT",
+        "xcodebuild"
     ],
 }

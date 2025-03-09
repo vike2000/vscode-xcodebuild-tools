@@ -3,37 +3,48 @@
     "version": "0.1.0",
     "configurations": [
         {
+            "name": "Launch dev",
+            "preLaunchTask": "build",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/dev.ts",
+            "args": ["\t\\e\\s\\`$$\"'"], // $'\t\\e\s\\`$$"\''
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        {
             "name": "Launch Extension (helloworld)",
+            "preLaunchTask": "build",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": ["--extensionDevelopmentPath=${workspaceRoot}", "${workspaceRoot}/examples/helloworld"],
-            "stopOnEntry": false,
+            "timeout": 60000,
             "sourceMaps": true,
             "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
-            "preLaunchTask": "build"
         },
         {
             "name": "Launch Extension (helloworld-ios)",
+            "preLaunchTask": "build",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": ["--extensionDevelopmentPath=${workspaceRoot}", "${workspaceRoot}/examples/helloworld-ios"],
-            "stopOnEntry": false,
             "sourceMaps": true,
             "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
-            "preLaunchTask": "build"
         },
         {
             "name": "Launch Tests",
+            "preLaunchTask": "build",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": ["--extensionDevelopmentPath=${workspaceRoot}", "--extensionTestsPath=${workspaceRoot}/out/test"],
-            "stopOnEntry": false,
             "sourceMaps": true,
             "outFiles": [ "${workspaceRoot}/out/test/**/*.js" ],
-            "preLaunchTask": "npm"
         }
     ]
 }

@@ -1,9 +1,13 @@
 .vscode/**
 .vscode-test/**
-out/test/**
 test/**
+test-dev/**
+out/test/**
+out/test-dev/**
 src/**
-**/*.map
+**/*.ts
 .gitignore
 tsconfig.json
 vsc-extension-quickstart.md
+*—*
+*>*
