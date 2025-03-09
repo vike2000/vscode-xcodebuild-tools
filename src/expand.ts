@@ -1,11 +1,14 @@
 "use strict";
 
+import {replaceVariables as vscodeVariables} from '@c4312/vscode-variables'
+
 function replaceAll(s: string, substr: string, newSubstr: string): string {
     while (s.indexOf(substr) !== -1) {
         s = s.replace(substr, newSubstr);
     }
 
-    return s;
+    //return s;
+    return vscodeVariables(s);
 }
 
 function* reversed<T>(a: T[]) {

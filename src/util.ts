@@ -10,7 +10,19 @@ import * as ajv from "ajv";
 
 import * as jsonc from "jsonc-parser";
 
-function readFile(fileName: string): Promise<string> {
+function writeFile(fileName: string, data: string|NodeJS.ArrayBufferView) {
+    return new Promise<void>((resolve, reject) => {
+        fs.writeFile(fileName, data, "utf-8", (err) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve();
+            }
+        });
+    });
+}
+
+function readFile(fileName: string) {
     return new Promise<string>((resolve, reject) => {
         fs.readFile(fileName, "utf-8", (err, data) => {
             if (err) {
@@ -22,23 +34,34 @@ function readFile(fileName: string): Promise<string> {
     });
 }
 
-export async function readJSON(fileName: string, validate?: ajv.ValidateFunction): Promise<any> {
-    let data = await readFile(fileName);
-    let json = jsonc.parse(data);
-
-    if (validate && !await validate(json)) {
-        throw Error(`${fileName} has invalid format: ` + validate.errors);
+export async function writeJSON(fileName: string, ...stringify: [any] | [any, any] | [any, any, any]) {
+    let json: string
+    switch (stringify.length) {
+        case 1: json = JSON.stringify(stringify[0]);
+        case 2: json = JSON.stringify(stringify[0], stringify[1]);
+        case 3: json = JSON.stringify(stringify[0], stringify[1], stringify[2]);
     }
-
-    return json;
+    await writeFile(fileName, json);
 }
 
-export async function readSchema(fileName: string): Promise<any> {
+export async function readJSON(fileName: string, validate?: ajv.ValidateFunction) {
+    return readFile(fileName).then(async json => {
+        let data = jsonc.parse(json)
+        
+        if (validate && !await validate(data)) {
+            throw Error(`${fileName} has invalid format: ` + validate.errors.map(e => e.message).join("\n"));
+        }
+        
+        return data
+    })
+}
+
+export async function readSchema(fileName: string) {
     let schema = await readJSON(fileName);
-    return (new ajv()).compile(schema);
+    return (new ajv({verbose: true})).compile(schema);
 }
 
-export function splitLines(s: stream.Readable): void {
+export function splitLines(s: stream.Readable) {
     let buf: string = "";
 
     s.setEncoding("utf8");
@@ -80,8 +103,8 @@ export function translateTermination(proc: child_process.ChildProcess) {
     });
 
     proc.on("exit", (code, signal) => {
-        var message;
-        var event;
+        var message: string;
+        var event: string;
 
         if (signal) {
             message = `killed with signal ${signal}.`;
@@ -151,12 +174,12 @@ export function redirectToChannel(
 }
 
 export function merge<T>(...ts: T[]): T {
-    return <T> Object.assign({}, ...ts);
+    return Object.assign({}, ...ts) as T;
 }
 
 export function* entries(o: object): IterableIterator<[string, string]> {
     for (let k of Object.keys(o)) {
-        yield [k, <string> o[k]];
+        yield [k, o[k] as string];
     }
 }
 

@@ -1,8 +1,9 @@
 {
 	"name": "xcodebuild-tools",
+	"//cspell:ignore": " shescuote cpptools ",
 	"displayName": "Xcodebuild Tools",
 	"description": "Work with Xcode projects from inside Visual Studio Code",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"publisher": "vike2000",
 	"homepage": "https://github.com/vike2000/vscode-xcodebuild-tools",
 	"repository": {
@@ -32,6 +33,11 @@
 	"contributes": {
 		"commands": [
 			{
+				"command": "xcodebuild-tools.loadProject",
+				"title": "Reload project",
+				"category": "Xcodebuild-tools"
+			},
+			{
 				"command": "xcodebuild-tools.build",
 				"title": "Build",
 				"category": "Xcodebuild-tools"
@@ -47,13 +53,28 @@
 				"category": "Xcodebuild-tools"
 			},
 			{
+				"command": "xcodebuild-tools.buildAndDebug",
+				"title": "Build and Launch Debug Session",
+				"category": "Xcodebuild-tools"
+			},
+			{
 				"command": "xcodebuild-tools.profile",
 				"title": "Profile Program",
 				"category": "Xcodebuild-tools"
 			},
 			{
+				"command": "xcodebuild-tools.buildAndProfile",
+				"title": "Build and Profile Program",
+				"category": "Xcodebuild-tools"
+			},
+			{
 				"command": "xcodebuild-tools.run",
 				"title": "Run without Debugging",
+				"category": "Xcodebuild-tools"
+			},
+			{
+				"command": "xcodebuild-tools.buildAndRun",
+				"title": "Build and Run without Debugging",
 				"category": "Xcodebuild-tools"
 			},
 			{
@@ -69,6 +90,11 @@
 			{
 				"command": "xcodebuild-tools.selectDebugConfiguration",
 				"title": "Select Debug Configuration",
+				"category": "Xcodebuild-tools"
+			},
+			{
+				"command": "xcodebuild-tools.selectScheme",
+				"title": "Select Scheme",
 				"category": "Xcodebuild-tools"
 			},
 			{
@@ -96,6 +122,91 @@
 				"fileMatch": ".vscode/xcodebuild-tools.json",
 				"url": "./schemas/xcodebuild-tools-schema.json"
 			}
+		],
+		"configuration": [
+			{
+				"title": "Xcodebuild-tools",
+				"properties": {
+					"xcodebuild-tools.showLogChannelBeforeActions": {
+						"scope": "resource",
+						"type": "array",
+						"default": [
+							"loadProject",
+							"build",
+							"buildAndDebug",
+							"buildAndProfile",
+							"buildAndRun",
+							"clean"
+						],
+						"description": "An array of commands, before starting of which, their corresponding output is shown. Possible commands are: \"loadProject\", \"clean\", \"build\", \"buildAndDebug\", \"debug\", \"buildAndProfile\", \"profile\", \"buildAndRun\", \"run\", \"attach\""
+					},
+					"xcodebuild-tools.clearLogChannelBeforeCommands": {
+						"scope": "resource",
+						"type": "array",
+						"default": [
+							"loadProject",
+							"build",
+							"buildAndDebug",
+							"buildAndProfile",
+							"buildAndRun",
+							"clean"
+						],
+						"description": "An array of commands, before starting of which, their corresponding output is cleared. Possible commands are: \"loadProject\", \"clean\", \"build\", \"buildAndDebug\", \"debug\", \"buildAndProfile\", \"profile\", \"buildAndRun\", \"run\", \"attach\""
+					},
+					"xcodebuild-tools.statusBarItems": {
+						"scope": "resource",
+						"type": "array",
+						"default": [
+							"reloadProject",
+							"kill",
+							"scheme",
+							"buildConfig",
+							"debugConfig",
+							"buildAndDebug",
+							"debug",
+							"attach"
+						],
+						"description": "An ordered array of status bar item identifiers to setup after always first identifier \"build\". See setting statusBarItemPriorities where keys are possible identifiers."
+					},
+					"xcodebuild-tools.statusBarItemPriorities": {
+						"scope": "resource",
+						"type": "object",
+						"default": {
+							"build"				: 5.2,
+							"reloadProject"		: 5.1,
+							"kill"				: 5.0,
+							"scheme"			: 4.9,
+							"buildConfig"		: 4.8,
+							"debugConfig"		: 4.7,
+							"buildAndDebug"		: 4.6,
+							"debug"				: 4.5,
+							"buildAndProfile"	: 4.4,
+							"profile"			: 4.3,
+							"buildAndRun"		: 4.2,
+							"run"				: 4.1,
+							"attach"			: 4.0
+						},
+						"description": "A mapping from status bar item identifier to a priority, by Code only documented as number, being relative to all extensions status bar items. At the time of writing this, a basic scanning of locally installed extensions (using pcre and sort) the values have a mean of about 4.5 (if removing \"extremes\" of -1, 0, 1, or value > 900; also a median is similar if using uniq).",
+						"description//personal.sh": "< ~/data/$'vgreps -o ~:.vscode:extensions \\'createStatusBarItem\\\\s*\\\\([^()]*\\\\)\\''.txt gawk 'match($0,\"createStatusBarItem.*(Left|Right), *([-+]? *[.0-9]+)\",m){print m[2]}'|sort -n|uniq|gawk '{values[iter++]=$0 ; sum+=$0 ; printf \"%s\", iter\": \"$0 ; if (0<$0&&$0<900) {saneValues[saneIter++]=$0 ; saneSum+=$0 ; print \" (sane \"saneIter\")\"}else{print \"\"}} END {count=length(values) ; saneCount=length(saneValues) ; print \"count: \"count ; print \"sane count: \"saneCount ; print \"mean: \"sum/count ; print \"sane mean: \"saneSum/count ; print \"median: \"values[int(count/2-1)]\" || \"values[int(.5+count/2-1)] ; print \"sane median: \"saneValues[int(saneCount/2-1)]\" || \"saneValues[int(.5+saneCount/2-1)]}' # similar with basic integer interpretation removing . in [.0-9] # cspell:ignore vgreps "
+					},
+					"xcodebuild-tools.reloadStore": {
+						"scope": "resource",
+						"type": "string",
+						"default": "${workspaceFolder}/.vscode/.xcodebuild-tools-cache.json",
+						"description": "Xcodebuild-tools retrieves project info like schemes and build configurations from `xcodebuild -list`. Running `xcodebuild -list`, even outside of Code, for unknown reasons, can be very slow. This setting specifies a file path for project info to, when non-existent write by, and when existent read instead of, retrieved project info. If the setting is unset or empty the file path is unused."
+					},
+					"xcodebuild-tools.separateLogChannels": {
+						"scope": "resource",
+						"type": "boolean",
+						"default": false
+					},
+					"xcodebuild-tools.saveAllOnBuild": {
+						"scope": "resource",
+						"type": "boolean",
+						"default": false
+					}
+				}
+			}
 		]
 	},
 	"scripts": {
@@ -104,25 +215,45 @@
 		"watch": "tsc -watch -p ./",
 		"pretest": "npm run compile && npm run lint",
 		"lint": "eslint src",
-		"test": "vscode-test"
+		"vscode-test": "vscode-test",
+		"dev-test": "ts-mocha out/test-dev/dev.js",
+		"dev-test-transpiled": "npm run compile && npx mocha out/test-dev/dev.js"
 	},
 	"devDependencies//": "mocha is for testing",
+	"devDependencies-disabled": {
+		"com.dyn-o-saur.bluelephant.js.tk": "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk",
+		"xregexp": "^4.1.0"
+	},
 	"devDependencies": {
-		"@types/vscode": "^1.93.0",
 		"@types/mocha": "^10.0.7",
 		"@types/node": "20.x",
+		"@types/vscode": "^1.93.0",
 		"@typescript-eslint/eslint-plugin": "^8.3.0",
 		"@typescript-eslint/parser": "^8.3.0",
-		"eslint": "^9.9.1",
-		"typescript": "^5.5.4",
 		"@vscode/test-cli": "^0.0.10",
-		"@vscode/test-electron": "^2.4.1"
+		"@vscode/test-electron": "^2.4.1",
+		"better-assert": "^1.0.2",
+		"com.dyn-o-saur.bluelephant.js.tk": "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk",
+		"eslint": "^9.9.1",
+		"mocha": "^10.7.3",
+		"ts-mocha": "^10.0.0",
+		"typescript": "^5.5.4",
+		"underscore": "^1.13.7",
+		"xregexp": "^2.0.0"
 	},
 	"dependencies": {
+		"@c4312/vscode-variables": "git+https://git@github.com/connor4312/vscode-variables.git",
 		"ajv": "^5.2.2",
-		"jsonc-parser": "^3.3.1"
+		"jsonc-parser": "^3.3.1",
+		"shescuote": "bitbucket:vike/shescuote"
 	},
-	"extensionDependencies": [
+	"extensionDependencies-disabled": [
 		"ms-vscode.cpptools"
-	]
+	],
+	"extensionDependencies": [
+		"vadimcn.vscode-lldb"
+	],
+	"__metadata": {
+		"size": 86454521
+	}
 }

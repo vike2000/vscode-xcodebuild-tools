@@ -85,8 +85,5 @@
             "$ref": "#/definitions/args"
         }
     },
-    "required": [
-        "workspace",
-        "scheme"
-    ]
+    "required": []
 }

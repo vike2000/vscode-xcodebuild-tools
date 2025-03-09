@@ -1,16 +1,14 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es6",
+        "target": "es2018", // minimum for regex named capturing groups like /(?<name>.*)/
         "outDir": "out",
-        "lib": [
-            "es6"
-        ],
         "sourceMap": true,
         "rootDir": "."
     },
     "exclude": [
         "node_modules",
-        ".vscode-test"
+        ".vscode-test",
+        "*—*"
     ]
 }
