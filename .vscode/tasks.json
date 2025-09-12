@@ -6,7 +6,7 @@
 		{
 			"label": "build",
 			"type": "npm",
-			"script": "compile",
+			"script": "build",
 			"problemMatcher": "$tsc",
 			"group": {
 				"kind": "build",
@@ -16,11 +16,69 @@
 		{
 			"type": "npm",
 			"script": "watch",
-			"problemMatcher": "$tsc-watch",
+			"problemMatcher": [
+				"$tsc-watch"
+			],
 			"isBackground": true,
 			"presentation": {
 				"reveal": "never"
 			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "build using macports bash and ~vike/.bash_profile_paths",
+			"type": "npm",
+			"options": {
+				"shell": {
+					"executable": "/opt/local/bin/bash",
+					"args": [
+						"-c",
+						". ~vike/.bash_profile_paths && npm run compile"
+					]
+				}
+			},
+			"script": "compile",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "watch using macports bash and ~vike/.bash_profile_paths",
+			"type": "npm",
+			"options": {
+				"shell": {
+					"executable": "/opt/local/bin/bash",
+					"args": [
+						"-c",
+						". ~vike/.bash_profile_paths && npm run watch"
+					]
+				}
+			},
+			"script": "watch",
+			"problemMatcher": [
+				"$tsc-watch"
+			],
+			"isBackground": true,
+			"presentation": {
+				"reveal": "never"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "build",
+			"type": "npm",
+			"script": "build",
+			"problemMatcher": "$tsc",
 			"group": {
 				"kind": "build",
 				"isDefault": true

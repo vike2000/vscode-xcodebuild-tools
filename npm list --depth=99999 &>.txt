@@ -1,0 +1,766 @@
+npm ERR! code ELSPROBLEMS
+npm ERR! invalid: shescuote@0.1.0 /Users/vike/file/develop/git/vscode-xcodebuild-tools/node_modules/shescuote
+npm ERR! invalid: com.dyn-o-saur.bluelephant.js.tk@0.1.4 /Users/vike/file/develop/ts/shescuote/node_modules/com.dyn-o-saur.bluelephant.js.tk
+npm ERR! invalid: jsdn@npm:@com.dyn-o-saur.bluelephant/jsdn@0.2.1 /Users/vike/file/develop/ts/shescuote/node_modules/jsdn
+npm ERR! invalid: com.dyn-o-saur.bluelephant.js.tk@0.1.4 /Users/vike/file/develop/ts/JSDN/node_modules/com.dyn-o-saur.bluelephant.js.tk
+npm ERR! invalid: tasseography@0.1.0 /Users/vike/file/develop/ts/JSDN/node_modules/tasseography
+npm ERR! invalid: jsdn@0.1.0 /Users/vike/file/develop/ts/JSDN/node_modules/jsdn
+xcodebuild-tools@0.0.10 /Users/vike/file/develop/git/vscode-xcodebuild-tools
+├── @c4312/vscode-variables@1.0.0 (git+https://git@github.com/connor4312/vscode-variables.git#fa7fd8f130906413c8352a7bec3107ddd0633625)
+├── @types/mocha@10.0.8
+├─┬ @types/node@20.16.10
+│ └── undici-types@6.19.8
+├── @types/vscode@1.93.0
+├─┬ @typescript-eslint/eslint-plugin@8.7.0
+│ ├── @eslint-community/regexpp@4.11.1
+│ ├── @typescript-eslint/parser@8.7.0 deduped
+│ ├─┬ @typescript-eslint/scope-manager@8.7.0
+│ │ ├── @typescript-eslint/types@8.7.0 deduped
+│ │ └── @typescript-eslint/visitor-keys@8.7.0 deduped
+│ ├─┬ @typescript-eslint/type-utils@8.7.0
+│ │ ├── @typescript-eslint/typescript-estree@8.7.0 deduped
+│ │ ├── @typescript-eslint/utils@8.7.0 deduped
+│ │ ├── debug@4.3.7 deduped
+│ │ └── ts-api-utils@1.3.0 deduped
+│ ├─┬ @typescript-eslint/utils@8.7.0
+│ │ ├── @eslint-community/eslint-utils@4.4.0 deduped
+│ │ ├── @typescript-eslint/scope-manager@8.7.0 deduped
+│ │ ├── @typescript-eslint/types@8.7.0 deduped
+│ │ ├── @typescript-eslint/typescript-estree@8.7.0 deduped
+│ │ └── eslint@9.11.1 deduped
+│ ├─┬ @typescript-eslint/visitor-keys@8.7.0
+│ │ ├── @typescript-eslint/types@8.7.0 deduped
+│ │ └── eslint-visitor-keys@3.4.3
+│ ├── eslint@9.11.1 deduped
+│ ├── graphemer@1.4.0
+│ ├── ignore@5.3.2
+│ ├── natural-compare@1.4.0
+│ └─┬ ts-api-utils@1.3.0
+│   └── typescript@5.6.2 deduped
+├─┬ @typescript-eslint/parser@8.7.0
+│ ├── @typescript-eslint/scope-manager@8.7.0 deduped
+│ ├── @typescript-eslint/types@8.7.0
+│ ├─┬ @typescript-eslint/typescript-estree@8.7.0
+│ │ ├── @typescript-eslint/types@8.7.0 deduped
+│ │ ├── @typescript-eslint/visitor-keys@8.7.0 deduped
+│ │ ├── debug@4.3.7 deduped
+│ │ ├─┬ fast-glob@3.3.2
+│ │ │ ├── @nodelib/fs.stat@2.0.5
+│ │ │ ├── @nodelib/fs.walk@1.2.8 deduped
+│ │ │ ├── glob-parent@5.1.2 deduped
+│ │ │ ├── merge2@1.4.1
+│ │ │ └─┬ micromatch@4.0.8
+│ │ │   ├── braces@3.0.3 deduped
+│ │ │   └── picomatch@2.3.1 deduped
+│ │ ├── is-glob@4.0.3 deduped
+│ │ ├── minimatch@9.0.5 deduped
+│ │ ├── semver@7.6.3 deduped
+│ │ └── ts-api-utils@1.3.0 deduped
+│ ├── @typescript-eslint/visitor-keys@8.7.0 deduped
+│ ├─┬ debug@4.3.7
+│ │ └── ms@2.1.3 deduped
+│ └── eslint@9.11.1 deduped
+├─┬ @vscode/test-cli@0.0.10
+│ ├── @types/mocha@10.0.8 deduped
+│ ├─┬ c8@9.1.0
+│ │ ├── @bcoe/v8-coverage@0.2.3
+│ │ ├── @istanbuljs/schema@0.1.3
+│ │ ├── find-up@5.0.0 deduped
+│ │ ├─┬ foreground-child@3.3.0
+│ │ │ ├── cross-spawn@7.0.3 deduped
+│ │ │ └── signal-exit@4.1.0
+│ │ ├── istanbul-lib-coverage@3.2.2
+│ │ ├─┬ istanbul-lib-report@3.0.1
+│ │ │ ├── istanbul-lib-coverage@3.2.2 deduped
+│ │ │ ├─┬ make-dir@4.0.0
+│ │ │ │ └── semver@7.6.3 deduped
+│ │ │ └─┬ supports-color@7.2.0
+│ │ │   └── has-flag@4.0.0 deduped
+│ │ ├─┬ istanbul-reports@3.1.7
+│ │ │ ├── html-escaper@2.0.2
+│ │ │ └── istanbul-lib-report@3.0.1 deduped
+│ │ ├─┬ test-exclude@6.0.0
+│ │ │ ├── @istanbuljs/schema@0.1.3 deduped
+│ │ │ ├─┬ glob@7.2.3
+│ │ │ │ ├── fs.realpath@1.0.0 deduped
+│ │ │ │ ├── inflight@1.0.6 deduped
+│ │ │ │ ├── inherits@2.0.4 deduped
+│ │ │ │ ├── minimatch@3.1.2 deduped
+│ │ │ │ ├── once@1.4.0 deduped
+│ │ │ │ └── path-is-absolute@1.0.1
+│ │ │ └─┬ minimatch@3.1.2
+│ │ │   └─┬ brace-expansion@1.1.11
+│ │ │     ├── balanced-match@1.0.2 deduped
+│ │ │     └── concat-map@0.0.1 deduped
+│ │ ├─┬ v8-to-istanbul@9.3.0
+│ │ │ ├─┬ @jridgewell/trace-mapping@0.3.25
+│ │ │ │ ├── @jridgewell/resolve-uri@3.1.2
+│ │ │ │ └── @jridgewell/sourcemap-codec@1.5.0
+│ │ │ ├── @types/istanbul-lib-coverage@2.0.6
+│ │ │ └── convert-source-map@2.0.0
+│ │ ├── yargs-parser@21.1.1
+│ │ └── yargs@17.7.2 deduped
+│ ├─┬ chokidar@3.6.0
+│ │ ├─┬ anymatch@3.1.3
+│ │ │ ├── normalize-path@3.0.0 deduped
+│ │ │ └── picomatch@2.3.1
+│ │ ├─┬ braces@3.0.3
+│ │ │ └─┬ fill-range@7.1.1
+│ │ │   └─┬ to-regex-range@5.0.1
+│ │ │     └── is-number@7.0.0
+│ │ ├── fsevents@2.3.3
+│ │ ├─┬ glob-parent@5.1.2
+│ │ │ └── is-glob@4.0.3 deduped
+│ │ ├─┬ is-binary-path@2.1.0
+│ │ │ └── binary-extensions@2.3.0
+│ │ ├── is-glob@4.0.3 deduped
+│ │ ├── normalize-path@3.0.0
+│ │ └─┬ readdirp@3.6.0
+│ │   └── picomatch@2.3.1 deduped
+│ ├─┬ enhanced-resolve@5.17.1
+│ │ ├── graceful-fs@4.2.11
+│ │ └── tapable@2.2.1
+│ ├─┬ glob@10.4.5
+│ │ ├── foreground-child@3.3.0 deduped
+│ │ ├─┬ jackspeak@3.4.3
+│ │ │ ├─┬ @isaacs/cliui@8.0.2
+│ │ │ │ ├─┬ string-width-cjs@npm:string-width@4.2.3
+│ │ │ │ │ ├── emoji-regex@8.0.0
+│ │ │ │ │ ├── is-fullwidth-code-point@3.0.0 deduped
+│ │ │ │ │ └── strip-ansi@6.0.1 deduped
+│ │ │ │ ├─┬ string-width@5.1.2
+│ │ │ │ │ ├── eastasianwidth@0.2.0 deduped
+│ │ │ │ │ ├── emoji-regex@9.2.2
+│ │ │ │ │ └─┬ strip-ansi@7.1.0
+│ │ │ │ │   └── ansi-regex@6.1.0
+│ │ │ │ ├─┬ strip-ansi-cjs@npm:strip-ansi@6.0.1
+│ │ │ │ │ └── ansi-regex@5.0.1 deduped
+│ │ │ │ ├─┬ strip-ansi@7.1.0
+│ │ │ │ │ └── ansi-regex@6.1.0
+│ │ │ │ ├─┬ wrap-ansi-cjs@npm:wrap-ansi@7.0.0
+│ │ │ │ │ ├── ansi-styles@4.3.0 deduped
+│ │ │ │ │ ├─┬ string-width@4.2.3
+│ │ │ │ │ │ ├── emoji-regex@8.0.0
+│ │ │ │ │ │ ├── is-fullwidth-code-point@3.0.0 deduped
+│ │ │ │ │ │ └── strip-ansi@6.0.1 deduped
+│ │ │ │ │ └── strip-ansi@6.0.1 deduped
+│ │ │ │ └─┬ wrap-ansi@8.1.0
+│ │ │ │   ├── ansi-styles@6.2.1
+│ │ │ │   ├── string-width@5.1.2 deduped
+│ │ │ │   └─┬ strip-ansi@7.1.0
+│ │ │ │     └── ansi-regex@6.1.0
+│ │ │ └── @pkgjs/parseargs@0.11.0
+│ │ ├── minimatch@9.0.5 deduped
+│ │ ├── minipass@7.1.2
+│ │ ├── package-json-from-dist@1.0.1
+│ │ └─┬ path-scurry@1.11.1
+│ │   ├── lru-cache@10.4.3
+│ │   └── minipass@7.1.2 deduped
+│ ├─┬ minimatch@9.0.5
+│ │ └─┬ brace-expansion@2.0.1
+│ │   └── balanced-match@1.0.2
+│ ├── mocha@10.7.3 deduped
+│ ├── supports-color@9.4.0
+│ └─┬ yargs@17.7.2
+│   ├─┬ cliui@8.0.1
+│   │ ├─┬ string-width@4.2.3
+│   │ │ ├── emoji-regex@8.0.0
+│   │ │ ├── is-fullwidth-code-point@3.0.0 deduped
+│   │ │ └── strip-ansi@6.0.1 deduped
+│   │ ├── strip-ansi@6.0.1 deduped
+│   │ └─┬ wrap-ansi@7.0.0
+│   │   ├── ansi-styles@4.3.0 deduped
+│   │   ├── string-width@4.2.3 deduped
+│   │   └── strip-ansi@6.0.1 deduped
+│   ├── escalade@3.2.0
+│   ├── get-caller-file@2.0.5
+│   ├── require-directory@2.1.1
+│   ├─┬ string-width@4.2.3
+│   │ ├── emoji-regex@8.0.0
+│   │ ├── is-fullwidth-code-point@3.0.0
+│   │ └── strip-ansi@6.0.1 deduped
+│   ├── y18n@5.0.8
+│   └── yargs-parser@21.1.1 deduped
+├─┬ @vscode/test-electron@2.4.1
+│ ├─┬ http-proxy-agent@7.0.2
+│ │ ├─┬ agent-base@7.1.1
+│ │ │ └── debug@4.3.7 deduped
+│ │ └── debug@4.3.7 deduped
+│ ├─┬ https-proxy-agent@7.0.5
+│ │ ├── agent-base@7.1.1 deduped
+│ │ └── debug@4.3.7 deduped
+│ ├─┬ jszip@3.10.1
+│ │ ├─┬ lie@3.3.0
+│ │ │ └── immediate@3.0.6
+│ │ ├── pako@1.0.11
+│ │ ├─┬ readable-stream@2.3.8
+│ │ │ ├── core-util-is@1.0.3
+│ │ │ ├── inherits@2.0.4 deduped
+│ │ │ ├── isarray@1.0.0
+│ │ │ ├── process-nextick-args@2.0.1
+│ │ │ ├── safe-buffer@5.1.2
+│ │ │ ├─┬ string_decoder@1.1.1
+│ │ │ │ └── safe-buffer@5.1.2 deduped
+│ │ │ └── util-deprecate@1.0.2
+│ │ └── setimmediate@1.0.5
+│ ├─┬ ora@7.0.1
+│ │ ├── chalk@5.3.0
+│ │ ├─┬ cli-cursor@4.0.0
+│ │ │ └─┬ restore-cursor@4.0.0
+│ │ │   ├─┬ onetime@5.1.2
+│ │ │   │ └── mimic-fn@2.1.0
+│ │ │   └── signal-exit@3.0.7
+│ │ ├── cli-spinners@2.9.2
+│ │ ├── is-interactive@2.0.0
+│ │ ├── is-unicode-supported@1.3.0
+│ │ ├─┬ log-symbols@5.1.0
+│ │ │ ├── chalk@5.3.0 deduped
+│ │ │ └── is-unicode-supported@1.3.0 deduped
+│ │ ├─┬ stdin-discarder@0.1.0
+│ │ │ └─┬ bl@5.1.0
+│ │ │   ├─┬ buffer@6.0.3
+│ │ │   │ ├── base64-js@1.5.1
+│ │ │   │ └── ieee754@1.2.1
+│ │ │   ├── inherits@2.0.4 deduped
+│ │ │   └─┬ readable-stream@3.6.2
+│ │ │     ├── inherits@2.0.4 deduped
+│ │ │     ├── string_decoder@1.1.1 deduped
+│ │ │     └── util-deprecate@1.0.2 deduped
+│ │ ├─┬ string-width@6.1.0
+│ │ │ ├── eastasianwidth@0.2.0
+│ │ │ ├── emoji-regex@10.4.0
+│ │ │ └── strip-ansi@7.1.0 deduped
+│ │ └─┬ strip-ansi@7.1.0
+│ │   └── ansi-regex@6.1.0
+│ └── semver@7.6.3
+├─┬ ajv@5.5.2
+│ ├── co@4.6.0
+│ ├── fast-deep-equal@1.1.0
+│ ├── fast-json-stable-stringify@2.1.0
+│ └── json-schema-traverse@0.3.1
+├─┬ better-assert@1.0.2
+│ └── callsite@1.0.0
+├─┬ com.dyn-o-saur.bluelephant.js.tk@0.1.4 (git+ssh://git@bitbucket.org/vike/com.dyn-o-saur.bluelephant.js.tk.git#6937a8c0310c7c3e6e9a9a402ee394ee6f921932)
+│ └── underscore@1.13.7 deduped
+├─┬ eslint@9.11.1
+│ ├─┬ @eslint-community/eslint-utils@4.4.0
+│ │ ├── eslint-visitor-keys@3.4.3 deduped
+│ │ └── eslint@9.11.1 deduped
+│ ├── @eslint-community/regexpp@4.11.1 deduped
+│ ├─┬ @eslint/config-array@0.18.0
+│ │ ├── @eslint/object-schema@2.1.4
+│ │ ├── debug@4.3.7 deduped
+│ │ └─┬ minimatch@3.1.2
+│ │   └─┬ brace-expansion@1.1.11
+│ │     ├── balanced-match@1.0.2 deduped
+│ │     └── concat-map@0.0.1 deduped
+│ ├── @eslint/core@0.6.0
+│ ├─┬ @eslint/eslintrc@3.1.0
+│ │ ├─┬ ajv@6.12.6
+│ │ │ ├── fast-deep-equal@3.1.3
+│ │ │ ├── fast-json-stable-stringify@2.1.0 deduped
+│ │ │ ├── json-schema-traverse@0.4.1
+│ │ │ └── uri-js@4.4.1 deduped
+│ │ ├── debug@4.3.7 deduped
+│ │ ├── espree@10.2.0 deduped
+│ │ ├── globals@14.0.0
+│ │ ├── ignore@5.3.2 deduped
+│ │ ├─┬ import-fresh@3.3.0
+│ │ │ ├─┬ parent-module@1.0.1
+│ │ │ │ └── callsites@3.1.0
+│ │ │ └── resolve-from@4.0.0
+│ │ ├── js-yaml@4.1.0 deduped
+│ │ ├─┬ minimatch@3.1.2
+│ │ │ └─┬ brace-expansion@1.1.11
+│ │ │   ├── balanced-match@1.0.2 deduped
+│ │ │   └── concat-map@0.0.1 deduped
+│ │ └── strip-json-comments@3.1.1 deduped
+│ ├── @eslint/js@9.11.1
+│ ├─┬ @eslint/plugin-kit@0.2.0
+│ │ └─┬ levn@0.4.1
+│ │   ├── prelude-ls@1.2.1 deduped
+│ │   └── type-check@0.4.0 deduped
+│ ├── @humanwhocodes/module-importer@1.0.1
+│ ├── @humanwhocodes/retry@0.3.0
+│ ├─┬ @nodelib/fs.walk@1.2.8
+│ │ ├─┬ @nodelib/fs.scandir@2.1.5
+│ │ │ ├── @nodelib/fs.stat@2.0.5 deduped
+│ │ │ └─┬ run-parallel@1.2.0
+│ │ │   └── queue-microtask@1.2.3
+│ │ └─┬ fastq@1.17.1
+│ │   └── reusify@1.0.4
+│ ├── @types/estree@1.0.6
+│ ├── @types/json-schema@7.0.15
+│ ├─┬ ajv@6.12.6
+│ │ ├── fast-deep-equal@3.1.3 deduped
+│ │ ├── fast-json-stable-stringify@2.1.0 deduped
+│ │ ├── json-schema-traverse@0.4.1
+│ │ └─┬ uri-js@4.4.1
+│ │   └── punycode@2.3.1
+│ ├─┬ chalk@4.1.2
+│ │ ├─┬ ansi-styles@4.3.0
+│ │ │ └─┬ color-convert@2.0.1
+│ │ │   └── color-name@1.1.4
+│ │ └─┬ supports-color@7.2.0
+│ │   └── has-flag@4.0.0 deduped
+│ ├─┬ cross-spawn@7.0.3
+│ │ ├── path-key@3.1.1
+│ │ ├─┬ shebang-command@2.0.0
+│ │ │ └── shebang-regex@3.0.0
+│ │ └─┬ which@2.0.2
+│ │   └── isexe@2.0.0
+│ ├── debug@4.3.7 deduped
+│ ├── escape-string-regexp@4.0.0
+│ ├─┬ eslint-scope@8.1.0
+│ │ ├─┬ esrecurse@4.3.0
+│ │ │ └── estraverse@5.3.0 deduped
+│ │ └── estraverse@5.3.0
+│ ├── eslint-visitor-keys@4.1.0
+│ ├─┬ espree@10.2.0
+│ │ ├─┬ acorn-jsx@5.3.2
+│ │ │ └── acorn@8.12.1 deduped
+│ │ ├── acorn@8.12.1
+│ │ └── eslint-visitor-keys@4.1.0
+│ ├─┬ esquery@1.6.0
+│ │ └── estraverse@5.3.0 deduped
+│ ├── esutils@2.0.3
+│ ├── fast-deep-equal@3.1.3
+│ ├─┬ file-entry-cache@8.0.0
+│ │ └─┬ flat-cache@4.0.1
+│ │   ├── flatted@3.3.1
+│ │   └─┬ keyv@4.5.4
+│ │     └── json-buffer@3.0.1
+│ ├─┬ find-up@5.0.0
+│ │ ├─┬ locate-path@6.0.0
+│ │ │ └─┬ p-locate@5.0.0
+│ │ │   └─┬ p-limit@3.1.0
+│ │ │     └── yocto-queue@0.1.0
+│ │ └── path-exists@4.0.0
+│ ├─┬ glob-parent@6.0.2
+│ │ └── is-glob@4.0.3 deduped
+│ ├── ignore@5.3.2 deduped
+│ ├── imurmurhash@0.1.4
+│ ├─┬ is-glob@4.0.3
+│ │ └── is-extglob@2.1.1
+│ ├── is-path-inside@3.0.3
+│ ├── UNMET OPTIONAL DEPENDENCY jiti@*
+│ ├── json-stable-stringify-without-jsonify@1.0.1
+│ ├── lodash.merge@4.6.2
+│ ├─┬ minimatch@3.1.2
+│ │ └─┬ brace-expansion@1.1.11
+│ │   ├── balanced-match@1.0.2 deduped
+│ │   └── concat-map@0.0.1
+│ ├── natural-compare@1.4.0 deduped
+│ ├─┬ optionator@0.9.4
+│ │ ├── deep-is@0.1.4
+│ │ ├── fast-levenshtein@2.0.6
+│ │ ├── levn@0.4.1 deduped
+│ │ ├── prelude-ls@1.2.1
+│ │ ├─┬ type-check@0.4.0
+│ │ │ └── prelude-ls@1.2.1 deduped
+│ │ └── word-wrap@1.2.5
+│ ├─┬ strip-ansi@6.0.1
+│ │ └── ansi-regex@5.0.1
+│ └── text-table@0.2.0
+├── jsonc-parser@3.3.1
+├─┬ mocha@10.7.3
+│ ├── ansi-colors@4.1.3
+│ ├── browser-stdout@1.3.1
+│ ├── chokidar@3.6.0 deduped
+│ ├── debug@4.3.7 deduped
+│ ├── diff@5.2.0
+│ ├── escape-string-regexp@4.0.0 deduped
+│ ├── find-up@5.0.0 deduped
+│ ├─┬ glob@8.1.0
+│ │ ├── fs.realpath@1.0.0
+│ │ ├─┬ inflight@1.0.6
+│ │ │ ├── once@1.4.0 deduped
+│ │ │ └── wrappy@1.0.2
+│ │ ├── inherits@2.0.4
+│ │ ├── minimatch@5.1.6 deduped
+│ │ └─┬ once@1.4.0
+│ │   └── wrappy@1.0.2 deduped
+│ ├── he@1.2.0
+│ ├─┬ js-yaml@4.1.0
+│ │ └── argparse@2.0.1
+│ ├─┬ log-symbols@4.1.0
+│ │ ├── chalk@4.1.2 deduped
+│ │ └── is-unicode-supported@0.1.0
+│ ├─┬ minimatch@5.1.6
+│ │ └── brace-expansion@2.0.1 deduped
+│ ├── ms@2.1.3
+│ ├─┬ serialize-javascript@6.0.2
+│ │ └─┬ randombytes@2.1.0
+│ │   └── safe-buffer@5.1.2 deduped
+│ ├── strip-json-comments@3.1.1
+│ ├─┬ supports-color@8.1.1
+│ │ └── has-flag@4.0.0
+│ ├── workerpool@6.5.1
+│ ├── yargs-parser@20.2.9
+│ ├─┬ yargs-unparser@2.0.0
+│ │ ├── camelcase@6.3.0
+│ │ ├── decamelize@4.0.0
+│ │ ├── flat@5.0.2
+│ │ └── is-plain-obj@2.1.0
+│ └─┬ yargs@16.2.0
+│   ├─┬ cliui@7.0.4
+│   │ ├── string-width@4.2.3 deduped
+│   │ ├── strip-ansi@6.0.1 deduped
+│   │ └─┬ wrap-ansi@7.0.0
+│   │   ├── ansi-styles@4.3.0 deduped
+│   │   ├── string-width@4.2.3 deduped
+│   │   └── strip-ansi@6.0.1 deduped
+│   ├── escalade@3.2.0 deduped
+│   ├── get-caller-file@2.0.5 deduped
+│   ├── require-directory@2.1.1 deduped
+│   ├─┬ string-width@4.2.3
+│   │ ├── emoji-regex@8.0.0
+│   │ ├── is-fullwidth-code-point@3.0.0 deduped
+│   │ └── strip-ansi@6.0.1 deduped
+│   ├── y18n@5.0.8 deduped
+│   └── yargs-parser@20.2.9 deduped
+├─┬ shescuote@0.1.0 invalid: "bitbucket:vike/shescuote" from the root project -> ./../../ts/shescuote
+│ ├── @types/mocha@10.0.9
+│ ├─┬ @types/node@20.16.11
+│ │ └── undici-types@6.19.8
+│ ├─┬ com.dyn-o-saur.bluelephant.js.tk@0.1.4 invalid: "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk" from ../../ts/shescuote
+│ │ └── underscore@1.13.7 deduped
+│ ├─┬ jsdn@npm:@com.dyn-o-saur.bluelephant/jsdn@0.2.1 invalid: "bitbucket:vike/jsdn" from ../../ts/shescuote -> ./../../ts/JSDN
+│ │ ├── @types/mocha@10.0.9
+│ │ ├─┬ @types/node@20.16.11
+│ │ │ └── undici-types@6.19.8
+│ │ ├─┬ com.dyn-o-saur.bluelephant.js.tk@0.1.4 invalid: "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk" from ../../ts/JSDN
+│ │ │ └── underscore@1.13.7 deduped
+│ │ ├─┬ copyfiles@2.4.1
+│ │ │ ├─┬ glob@7.2.3
+│ │ │ │ ├── fs.realpath@1.0.0
+│ │ │ │ ├─┬ inflight@1.0.6
+│ │ │ │ │ ├── once@1.4.0 deduped
+│ │ │ │ │ └── wrappy@1.0.2
+│ │ │ │ ├── inherits@2.0.4
+│ │ │ │ ├── minimatch@3.1.2 deduped
+│ │ │ │ ├─┬ once@1.4.0
+│ │ │ │ │ └── wrappy@1.0.2 deduped
+│ │ │ │ └── path-is-absolute@1.0.1
+│ │ │ ├─┬ minimatch@3.1.2
+│ │ │ │ └─┬ brace-expansion@1.1.11
+│ │ │ │   ├── balanced-match@1.0.2
+│ │ │ │   └── concat-map@0.0.1
+│ │ │ ├── mkdirp@1.0.4
+│ │ │ ├─┬ noms@0.0.0
+│ │ │ │ ├── inherits@2.0.4 deduped
+│ │ │ │ └─┬ readable-stream@1.0.34
+│ │ │ │   ├── core-util-is@1.0.3
+│ │ │ │   ├── inherits@2.0.4 deduped
+│ │ │ │   ├── isarray@0.0.1
+│ │ │ │   └── string_decoder@0.10.31
+│ │ │ ├─┬ through2@2.0.5
+│ │ │ │ ├─┬ readable-stream@2.3.8
+│ │ │ │ │ ├── core-util-is@1.0.3 deduped
+│ │ │ │ │ ├── inherits@2.0.4 deduped
+│ │ │ │ │ ├── isarray@1.0.0
+│ │ │ │ │ ├── process-nextick-args@2.0.1
+│ │ │ │ │ ├── safe-buffer@5.1.2
+│ │ │ │ │ ├─┬ string_decoder@1.1.1
+│ │ │ │ │ │ └── safe-buffer@5.1.2 deduped
+│ │ │ │ │ └── util-deprecate@1.0.2
+│ │ │ │ └── xtend@4.0.2
+│ │ │ ├── untildify@4.0.0
+│ │ │ └─┬ yargs@16.2.0
+│ │ │   ├─┬ cliui@7.0.4
+│ │ │   │ ├── string-width@4.2.3 deduped
+│ │ │   │ ├─┬ strip-ansi@6.0.1
+│ │ │   │ │ └── ansi-regex@5.0.1
+│ │ │   │ └─┬ wrap-ansi@7.0.0
+│ │ │   │   ├── ansi-styles@4.3.0 deduped
+│ │ │   │   ├── string-width@4.2.3 deduped
+│ │ │   │   └── strip-ansi@6.0.1 deduped
+│ │ │   ├── escalade@3.2.0
+│ │ │   ├── get-caller-file@2.0.5
+│ │ │   ├── require-directory@2.1.1
+│ │ │   ├─┬ string-width@4.2.3
+│ │ │   │ ├── emoji-regex@8.0.0
+│ │ │   │ ├── is-fullwidth-code-point@3.0.0
+│ │ │   │ └── strip-ansi@6.0.1 deduped
+│ │ │   ├── y18n@5.0.8
+│ │ │   └── yargs-parser@20.2.9 deduped
+│ │ ├─┬ mocha@10.7.3
+│ │ │ ├── ansi-colors@4.1.3
+│ │ │ ├── browser-stdout@1.3.1
+│ │ │ ├─┬ chokidar@3.6.0
+│ │ │ │ ├─┬ anymatch@3.1.3
+│ │ │ │ │ ├── normalize-path@3.0.0 deduped
+│ │ │ │ │ └── picomatch@2.3.1
+│ │ │ │ ├─┬ braces@3.0.3
+│ │ │ │ │ └─┬ fill-range@7.1.1
+│ │ │ │ │   └─┬ to-regex-range@5.0.1
+│ │ │ │ │     └── is-number@7.0.0
+│ │ │ │ ├── fsevents@2.3.3
+│ │ │ │ ├─┬ glob-parent@5.1.2
+│ │ │ │ │ └── is-glob@4.0.3 deduped
+│ │ │ │ ├─┬ is-binary-path@2.1.0
+│ │ │ │ │ └── binary-extensions@2.3.0
+│ │ │ │ ├─┬ is-glob@4.0.3
+│ │ │ │ │ └── is-extglob@2.1.1
+│ │ │ │ ├── normalize-path@3.0.0
+│ │ │ │ └─┬ readdirp@3.6.0
+│ │ │ │   └── picomatch@2.3.1 deduped
+│ │ │ ├─┬ debug@4.3.7
+│ │ │ │ └── ms@2.1.3 deduped
+│ │ │ ├── diff@5.2.0
+│ │ │ ├── escape-string-regexp@4.0.0
+│ │ │ ├─┬ find-up@5.0.0
+│ │ │ │ ├─┬ locate-path@6.0.0
+│ │ │ │ │ └─┬ p-locate@5.0.0
+│ │ │ │ │   └─┬ p-limit@3.1.0
+│ │ │ │ │     └── yocto-queue@0.1.0
+│ │ │ │ └── path-exists@4.0.0
+│ │ │ ├─┬ glob@8.1.0
+│ │ │ │ ├── fs.realpath@1.0.0 deduped
+│ │ │ │ ├── inflight@1.0.6 deduped
+│ │ │ │ ├── inherits@2.0.4 deduped
+│ │ │ │ ├── minimatch@5.1.6 deduped
+│ │ │ │ └── once@1.4.0 deduped
+│ │ │ ├── he@1.2.0
+│ │ │ ├─┬ js-yaml@4.1.0
+│ │ │ │ └── argparse@2.0.1
+│ │ │ ├─┬ log-symbols@4.1.0
+│ │ │ │ ├─┬ chalk@4.1.2
+│ │ │ │ │ ├─┬ ansi-styles@4.3.0
+│ │ │ │ │ │ └─┬ color-convert@2.0.1
+│ │ │ │ │ │   └── color-name@1.1.4
+│ │ │ │ │ └─┬ supports-color@7.2.0
+│ │ │ │ │   └── has-flag@4.0.0 deduped
+│ │ │ │ └── is-unicode-supported@0.1.0
+│ │ │ ├─┬ minimatch@5.1.6
+│ │ │ │ └─┬ brace-expansion@2.0.1
+│ │ │ │   └── balanced-match@1.0.2 deduped
+│ │ │ ├── ms@2.1.3
+│ │ │ ├─┬ serialize-javascript@6.0.2
+│ │ │ │ └─┬ randombytes@2.1.0
+│ │ │ │   └── safe-buffer@5.2.1
+│ │ │ ├── strip-json-comments@3.1.1
+│ │ │ ├─┬ supports-color@8.1.1
+│ │ │ │ └── has-flag@4.0.0
+│ │ │ ├── workerpool@6.5.1
+│ │ │ ├── yargs-parser@20.2.9
+│ │ │ ├─┬ yargs-unparser@2.0.0
+│ │ │ │ ├── camelcase@6.3.0
+│ │ │ │ ├── decamelize@4.0.0
+│ │ │ │ ├── flat@5.0.2
+│ │ │ │ └── is-plain-obj@2.1.0
+│ │ │ └── yargs@16.2.0 deduped
+│ │ ├─┬ tasseography@0.1.0 invalid: "bitbucket:vike/tasseography" from ../../ts/JSDN
+│ │ │ ├── com.dyn-o-saur.bluelephant.js.tk@0.1.4 deduped invalid: "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk" from ../../ts/JSDN, "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk" from ../../ts/JSDN/node_modules/tasseography
+│ │ │ ├─┬ jsdn@0.1.0 invalid: "bitbucket:vike/jsdn" from ../../ts/JSDN/node_modules/tasseography
+│ │ │ │ ├── com.dyn-o-saur.bluelephant.js.tk@0.1.4 deduped invalid: "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk" from ../../ts/JSDN, "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk" from ../../ts/JSDN/node_modules/tasseography, "bitbucket:vike/com.dyn-o-saur.bluelephant.js.tk" from ../../ts/JSDN/node_modules/jsdn
+│ │ │ │ ├── underscore@1.13.7 deduped
+│ │ │ │ └── xregexp@2.0.0 deduped
+│ │ │ ├── mocha@10.7.3 deduped
+│ │ │ ├── underscore@1.13.7 deduped
+│ │ │ ├── unexpected@13.2.1 deduped
+│ │ │ └── xregexp@2.0.0 deduped
+│ │ ├─┬ ts-mocha@10.0.0
+│ │ │ ├── mocha@10.7.3 deduped
+│ │ │ ├─┬ ts-node@7.0.1
+│ │ │ │ ├── arrify@1.0.1
+│ │ │ │ ├── buffer-from@1.1.2
+│ │ │ │ ├── diff@3.5.0
+│ │ │ │ ├── make-error@1.3.6
+│ │ │ │ ├── minimist@1.2.8 deduped
+│ │ │ │ ├─┬ mkdirp@0.5.6
+│ │ │ │ │ └── minimist@1.2.8 deduped
+│ │ │ │ ├─┬ source-map-support@0.5.21
+│ │ │ │ │ ├── buffer-from@1.1.2 deduped
+│ │ │ │ │ └── source-map@0.6.1
+│ │ │ │ └── yn@2.0.0
+│ │ │ └─┬ tsconfig-paths@3.15.0
+│ │ │   ├── @types/json5@0.0.29
+│ │ │   ├─┬ json5@1.0.2
+│ │ │   │ └── minimist@1.2.8 deduped
+│ │ │   ├── minimist@1.2.8 deduped
+│ │ │   └── strip-bom@3.0.0 deduped
+│ │ ├─┬ tsconfig-paths@4.2.0
+│ │ │ ├── json5@2.2.3
+│ │ │ ├── minimist@1.2.8
+│ │ │ └── strip-bom@3.0.0
+│ │ ├── typescript@5.6.3
+│ │ ├── underscore@1.13.7
+│ │ ├─┬ unexpected-ts@1.0.0
+│ │ │ └── unexpected@13.2.1 deduped
+│ │ ├─┬ unexpected@13.2.1
+│ │ │ ├─┬ array-changes-async@3.0.1
+│ │ │ │ └── arraydiff-async@0.2.0
+│ │ │ ├─┬ array-changes@3.0.1
+│ │ │ │ └── arraydiff-papandreou@0.1.1-patch1
+│ │ │ ├─┬ detect-indent@3.0.1
+│ │ │ │ ├── get-stdin@4.0.1
+│ │ │ │ ├── minimist@1.2.8 deduped
+│ │ │ │ └─┬ repeating@1.1.3
+│ │ │ │   └── is-finite@1.1.0
+│ │ │ ├── diff@5.2.0 deduped
+│ │ │ ├── greedy-interval-packer@1.2.0
+│ │ │ ├─┬ magicpen@6.2.4
+│ │ │ │ ├── ansi-styles@2.0.0
+│ │ │ │ └── color-diff@0.1.7
+│ │ │ ├── ukkonen@2.1.0
+│ │ │ └── unexpected-bluebird@2.9.34-longstack2
+│ │ └── xregexp@2.0.0
+│ ├─┬ mocha@10.7.3
+│ │ ├── ansi-colors@4.1.3
+│ │ ├── browser-stdout@1.3.1
+│ │ ├─┬ chokidar@3.6.0
+│ │ │ ├─┬ anymatch@3.1.3
+│ │ │ │ ├── normalize-path@3.0.0 deduped
+│ │ │ │ └── picomatch@2.3.1
+│ │ │ ├─┬ braces@3.0.3
+│ │ │ │ └─┬ fill-range@7.1.1
+│ │ │ │   └─┬ to-regex-range@5.0.1
+│ │ │ │     └── is-number@7.0.0
+│ │ │ ├── fsevents@2.3.3
+│ │ │ ├─┬ glob-parent@5.1.2
+│ │ │ │ └── is-glob@4.0.3 deduped
+│ │ │ ├─┬ is-binary-path@2.1.0
+│ │ │ │ └── binary-extensions@2.3.0
+│ │ │ ├─┬ is-glob@4.0.3
+│ │ │ │ └── is-extglob@2.1.1
+│ │ │ ├── normalize-path@3.0.0
+│ │ │ └─┬ readdirp@3.6.0
+│ │ │   └── picomatch@2.3.1 deduped
+│ │ ├─┬ debug@4.3.7
+│ │ │ └── ms@2.1.3 deduped
+│ │ ├── diff@5.2.0
+│ │ ├── escape-string-regexp@4.0.0
+│ │ ├─┬ find-up@5.0.0
+│ │ │ ├─┬ locate-path@6.0.0
+│ │ │ │ └─┬ p-locate@5.0.0
+│ │ │ │   └─┬ p-limit@3.1.0
+│ │ │ │     └── yocto-queue@0.1.0
+│ │ │ └── path-exists@4.0.0
+│ │ ├─┬ glob@8.1.0
+│ │ │ ├── fs.realpath@1.0.0
+│ │ │ ├─┬ inflight@1.0.6
+│ │ │ │ ├── once@1.4.0 deduped
+│ │ │ │ └── wrappy@1.0.2
+│ │ │ ├── inherits@2.0.4
+│ │ │ ├── minimatch@5.1.6 deduped
+│ │ │ └─┬ once@1.4.0
+│ │ │   └── wrappy@1.0.2 deduped
+│ │ ├── he@1.2.0
+│ │ ├─┬ js-yaml@4.1.0
+│ │ │ └── argparse@2.0.1
+│ │ ├─┬ log-symbols@4.1.0
+│ │ │ ├─┬ chalk@4.1.2
+│ │ │ │ ├─┬ ansi-styles@4.3.0
+│ │ │ │ │ └─┬ color-convert@2.0.1
+│ │ │ │ │   └── color-name@1.1.4
+│ │ │ │ └─┬ supports-color@7.2.0
+│ │ │ │   └── has-flag@4.0.0 deduped
+│ │ │ └── is-unicode-supported@0.1.0
+│ │ ├─┬ minimatch@5.1.6
+│ │ │ └─┬ brace-expansion@2.0.1
+│ │ │   └── balanced-match@1.0.2
+│ │ ├── ms@2.1.3
+│ │ ├─┬ serialize-javascript@6.0.2
+│ │ │ └─┬ randombytes@2.1.0
+│ │ │   └── safe-buffer@5.2.1
+│ │ ├── strip-json-comments@3.1.1
+│ │ ├─┬ supports-color@8.1.1
+│ │ │ └── has-flag@4.0.0
+│ │ ├── workerpool@6.5.1
+│ │ ├── yargs-parser@20.2.9
+│ │ ├─┬ yargs-unparser@2.0.0
+│ │ │ ├── camelcase@6.3.0
+│ │ │ ├── decamelize@4.0.0
+│ │ │ ├── flat@5.0.2
+│ │ │ └── is-plain-obj@2.1.0
+│ │ └─┬ yargs@16.2.0
+│ │   ├─┬ cliui@7.0.4
+│ │   │ ├── string-width@4.2.3 deduped
+│ │   │ ├─┬ strip-ansi@6.0.1
+│ │   │ │ └── ansi-regex@5.0.1
+│ │   │ └─┬ wrap-ansi@7.0.0
+│ │   │   ├── ansi-styles@4.3.0 deduped
+│ │   │   ├── string-width@4.2.3 deduped
+│ │   │   └── strip-ansi@6.0.1 deduped
+│ │   ├── escalade@3.2.0
+│ │   ├── get-caller-file@2.0.5
+│ │   ├── require-directory@2.1.1
+│ │   ├─┬ string-width@4.2.3
+│ │   │ ├── emoji-regex@8.0.0
+│ │   │ ├── is-fullwidth-code-point@3.0.0
+│ │   │ └── strip-ansi@6.0.1 deduped
+│ │   ├── y18n@5.0.8
+│ │   └── yargs-parser@20.2.9 deduped
+│ ├─┬ ts-mocha@10.0.0
+│ │ ├── mocha@10.7.3 deduped
+│ │ ├─┬ ts-node@7.0.1
+│ │ │ ├── arrify@1.0.1
+│ │ │ ├── buffer-from@1.1.2
+│ │ │ ├── diff@3.5.0
+│ │ │ ├── make-error@1.3.6
+│ │ │ ├── minimist@1.2.8 deduped
+│ │ │ ├─┬ mkdirp@0.5.6
+│ │ │ │ └── minimist@1.2.8 deduped
+│ │ │ ├─┬ source-map-support@0.5.21
+│ │ │ │ ├── buffer-from@1.1.2 deduped
+│ │ │ │ └── source-map@0.6.1
+│ │ │ └── yn@2.0.0
+│ │ └─┬ tsconfig-paths@3.15.0
+│ │   ├── @types/json5@0.0.29
+│ │   ├─┬ json5@1.0.2
+│ │   │ └── minimist@1.2.8 deduped
+│ │   ├── minimist@1.2.8 deduped
+│ │   └── strip-bom@3.0.0 deduped
+│ ├─┬ tsconfig-paths@4.2.0
+│ │ ├── json5@2.2.3
+│ │ ├── minimist@1.2.8
+│ │ └── strip-bom@3.0.0
+│ ├── typescript@5.6.3
+│ ├── underscore@1.13.7
+│ ├─┬ unexpected-ts@1.0.0
+│ │ └── unexpected@13.2.1 deduped
+│ ├─┬ unexpected@13.2.1
+│ │ ├─┬ array-changes-async@3.0.1
+│ │ │ └── arraydiff-async@0.2.0
+│ │ ├─┬ array-changes@3.0.1
+│ │ │ └── arraydiff-papandreou@0.1.1-patch1
+│ │ ├─┬ detect-indent@3.0.1
+│ │ │ ├── get-stdin@4.0.1
+│ │ │ ├── minimist@1.2.8 deduped
+│ │ │ └─┬ repeating@1.1.3
+│ │ │   └── is-finite@1.1.0
+│ │ ├── diff@5.2.0 deduped
+│ │ ├── greedy-interval-packer@1.2.0
+│ │ ├─┬ magicpen@6.2.4
+│ │ │ ├── ansi-styles@2.0.0
+│ │ │ └── color-diff@0.1.7
+│ │ ├── ukkonen@2.1.0
+│ │ └── unexpected-bluebird@2.9.34-longstack2
+│ └── xregexp@2.0.0
+├─┬ ts-mocha@10.0.0
+│ ├── mocha@10.7.3 deduped
+│ ├─┬ ts-node@7.0.1
+│ │ ├── arrify@1.0.1
+│ │ ├── buffer-from@1.1.2
+│ │ ├── diff@3.5.0
+│ │ ├── make-error@1.3.6
+│ │ ├── minimist@1.2.8
+│ │ ├─┬ mkdirp@0.5.6
+│ │ │ └── minimist@1.2.8 deduped
+│ │ ├─┬ source-map-support@0.5.21
+│ │ │ ├── buffer-from@1.1.2 deduped
+│ │ │ └── source-map@0.6.1
+│ │ └── yn@2.0.0
+│ └─┬ tsconfig-paths@3.15.0
+│   ├── @types/json5@0.0.29
+│   ├─┬ json5@1.0.2
+│   │ └── minimist@1.2.8 deduped
+│   ├── minimist@1.2.8 deduped
+│   └── strip-bom@3.0.0
+├── typescript@5.6.2
+├── underscore@1.13.7
+└── xregexp@2.0.0
+
+
+npm ERR! A complete log of this run can be found in: /Users/vike/.npm/_logs/2024-12-24T08_43_36_276Z-debug-0.log

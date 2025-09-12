@@ -16,7 +16,7 @@
             ],
         },
         {
-            "name": "Launch Extension (helloworld)",
+            "name": "Launch Extension with examples/helloworld workspace",
             "preLaunchTask": "build",
             "type": "extensionHost",
             "request": "launch",
@@ -27,7 +27,7 @@
             "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
         },
         {
-            "name": "Launch Extension (helloworld-ios)",
+            "name": "Launch Extension with examples/helloworld-ios workspace",
             "preLaunchTask": "build",
             "type": "extensionHost",
             "request": "launch",
@@ -39,6 +39,97 @@
         {
             "name": "Launch Tests",
             "preLaunchTask": "build",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}", "--extensionTestsPath=${workspaceRoot}/out/test"],
+            "sourceMaps": true,
+            "outFiles": [ "${workspaceRoot}/out/test/**/*.js" ],
+        },
+        
+
+        
+        {
+            "name": "Launch dev without building",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/dev.ts",
+            "args": ["\t\\e\\s\\`$$\"'"], // $'\t\\e\s\\`$$"\''
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        {
+            "name": "Launch Extension with examples/helloworld workspace without building",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}", "${workspaceRoot}/examples/helloworld"],
+            "timeout": 60000,
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
+            //"trace": true,
+        },
+        {
+            "name": "Launch Extension with examples/helloworld-ios workspace without building",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}", "${workspaceRoot}/examples/helloworld-ios"],
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
+        },
+        {
+            "name": "Launch Tests without building",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}", "--extensionTestsPath=${workspaceRoot}/out/test"],
+            "sourceMaps": true,
+            "outFiles": [ "${workspaceRoot}/out/test/**/*.js" ],
+        },
+        
+
+        
+        {
+            "name": "Launch dev using macports bash and ~vike/.bash_profile_paths",
+            "preLaunchTask": "build using macports bash and ~vike/.bash_profile_paths",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/dev.ts",
+            "args": ["\t\\e\\s\\`$$\"'"], // $'\t\\e\s\\`$$"\''
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        {
+            "name": "Launch Extension with examples/helloworld workspace using macports bash and ~vike/.bash_profile_paths",
+            "preLaunchTask": "build using macports bash and ~vike/.bash_profile_paths",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}", "${workspaceRoot}/examples/helloworld"],
+            "timeout": 60000,
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
+        },
+        {
+            "name": "Launch Extension with examples/helloworld-ios workspace using macports bash and ~vike/.bash_profile_paths",
+            "preLaunchTask": "build using macports bash and ~vike/.bash_profile_paths",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}", "${workspaceRoot}/examples/helloworld-ios"],
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/out/src/**/*.js"],
+        },
+        {
+            "name": "Launch Tests using macports bash and ~vike/.bash_profile_paths",
+            "preLaunchTask": "build using macports bash and ~vike/.bash_profile_paths",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",

@@ -17,6 +17,7 @@ import * as expander from "./expand";
 import * as diagnostics from "./diagnostics";
 import {State, Statuses, StatusBar} from "./status";
 import configProxy from "./configProxy";
+import {StoryboardEditorProvider} from './storyboard';
 
 interface TaskConfiguration {
     name: string;
@@ -182,6 +183,10 @@ class Extension {
                 this.updateStatus();
             }
         })
+
+        let disposable = StoryboardEditorProvider.register(context)
+        context.subscriptions.push(disposable)
+        //context.subscriptions.push(StoryboardEditorProvider.register(context))
     }
 
     private validateConfig: ajv.ValidateFunction;
@@ -475,12 +480,12 @@ class Extension {
             initChannel: false,
             parseOutput: false
         };
-        if (this.extConf.separateLogChannels)
+
+        if (this.clearLogChannelBeforeCommands("loadProject"))
             opts.channel.clear();
-        opts.channel.show();    // dev, also since vscode.OutputChannel has no method to tell us whether it's currently
-                                // shown/showing; another option I've thought of apropos this is to have an extension
-                                // setting to collapse all outputChannels into one...
-        
+        if (this.showLogChannelBeforeCommands("loadProject"))
+            opts.channel.show();
+
         this.xcodebuildList = {};
         this.status.project = {state: State.STARTED, proc: this.spawn(expand(e, opts))};
         let stdout: string = ''; this.status.project.proc.stdout.on('data', (chunk: string) => stdout+=chunk)
@@ -570,7 +575,10 @@ class Extension {
 
                 throw err
             })
-            
+
+            if (this.showLogChannelBeforeCommands("buildAndDebug") && this.extConf.separateLogChannels)
+                this.buildOutputChannel.show();
+
             await this.debug(e)
         })
     }
